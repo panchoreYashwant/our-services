@@ -1,0 +1,41 @@
+.scroll-animated-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 50px 0;
+    height: 100vh;
+  }
+  
+  h2 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease;
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+  
+  .service-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .service-item {
+      font-size: 1.2rem;
+    }
+  }
+  

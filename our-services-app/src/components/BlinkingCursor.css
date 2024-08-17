@@ -1,0 +1,13 @@
+.blinking-cursor {
+    font-weight: bold;
+    /* font-size: 4rem;  */
+    color: #fff; /* Match color to your design */
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
